@@ -1,5 +1,40 @@
 @use "App";
 
 .Subpage {
-    margin: 150px 0 0 0;
+    // margin: 150px 0 0 0;
+
+    h2 {
+        line-height: 100px;
+    }
+
+    .Sh01 {
+        position: relative;
+        background: url(../../public/assets/images/subMain02.jpg) no-repeat center center;
+        height: 400px;
+
+        ul {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            font-size: 19px;
+            font-weight: 500;
+            color: #fff;
+
+            li {
+                background: #369;
+                padding: 20px 40px;
+            }
+        }
+
+    }
+
+
+    .Sh02 {
+        background: url(../../public/assets/images/subMain03.PNG) no-repeat top center;
+        height: 400px;
+    }
+
+
 }
