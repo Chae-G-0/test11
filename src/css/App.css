@@ -3,48 +3,15 @@
     margin: 0 auto;
 }
 
-.Header {
-    background: #369;
+.csc {
+    padding: 100px 0;
 }
 
-.Header h1 {
-    font-size: 0;
-    line-height: 100px;
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px 0;
 }
 
-.Header .inner {
-    display: flex;
-    justify-content: space-between;
-}
 
-.Header .gnb ul {
-    display: flex;
-    gap: 40px;
-    font-size: 17px;
-    font-weight: 500;
-    color: #fff;
-    line-height: 100px;
-}
-
-.MainVisual figure {
-    height: 700px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.MainVisual .item01 {
-    background-image: url(../../public/assets/images/MainVisual01.jpg);
-}
-.MainVisual .item02 {
-    background-image: url(../../public/assets/images/MainVisual02.PNG);
-}
-.MainVisual .item03 {
-    background-image: url(../../public/assets/images/MainVisual03.jpg);
-}
-.MainVisual .item04 {
-    background-image: url(../../public/assets/images/MainVisual04.PNG);
-}
-.MainVisual .item05 {
-    background-image: url(../../public/assets/images/MainVisual05.PNG);
-}

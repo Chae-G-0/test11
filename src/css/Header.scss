@@ -1,0 +1,37 @@
+@use "App";
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+
+    &.on {
+        background: #369;
+        border-bottom: 0;
+    }
+
+    h1 {
+        font-size: 0;
+        line-height: 100px;
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gnb {
+        ul {
+            display: flex;
+            gap: 40px;
+            font-size: 21px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 100px;
+        }
+    }
+}

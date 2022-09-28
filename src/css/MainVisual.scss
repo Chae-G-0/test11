@@ -1,0 +1,50 @@
+@use "App";
+
+.MainVisual {
+    figure {
+        position: relative;
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .inner {
+            strong {
+                position: absolute;
+                bottom: 8%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                font-weight: 600;
+                color: #ddd;
+            }
+        }
+    }
+
+    @for $i from 1 through 5 {
+        .item0#{$i} {
+            background-image: url(../../public/assets/images/MainVisual0#{$i}.jpg);
+        }
+    }
+
+    .slogan {
+        position: absolute;
+        text-align: center;
+        text-shadow: 1px 1px 1px #666;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        line-height: 1.2;
+
+        span {
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 55px;
+            font-weight: 700;
+        }
+    }
+}
