@@ -1,0 +1,33 @@
+@use "App";
+
+.Marketing {
+    .inner {
+        display: flex;
+        gap: 30px;
+
+        .left {
+            flex: 1;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            flex: 2;
+
+            h3 {
+                font-size: 19px;
+                font-weight: 700;
+                margin: 0 0 10px 0;
+            }
+
+            .Mlist {
+                display: flex;
+                gap: 20px;
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+    }
+}

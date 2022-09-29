@@ -1,4 +1,5 @@
 import React from 'react'
+import Fslide from './Fslide'
 import MainBuss from './MainBuss'
 import MainContent from './MainContent'
 import MainVisual from './MainVisual'
@@ -9,6 +10,7 @@ const Main = () => {
         <MainVisual />
         <MainBuss/>
         <MainContent/>
+        <Fslide/>
     </main>
   )
 }

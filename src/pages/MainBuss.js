@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "../css/MainBuss.scss";
 
 const BUSS = [
-    { id: 1, des: "MICE사업", src: "/assets/images/mainCon01.JPG", link: "/Sub01" },
-    { id: 2, des: "관광사업", src: "/assets/images/mainCon02.JPG", link: "/Sub01" },
+    { id: 1, des: "관광사업", src: "/assets/images/mainCon01.JPG", link: "/Sub01" },
+    { id: 2, des: "MICE사업", src: "/assets/images/mainCon02.JPG", link: "/Sub01" },
     { id: 3, des: "부산관광기업지원센터", src: "/assets/images/mainCon03.JPG", link: "/Sub01" },
     { id: 4, des: "마케팅사업", src: "/assets/images/mainCon04.JPG", link: "/Sub01" },
 ];

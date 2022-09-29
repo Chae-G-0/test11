@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MainNav from './MainNav'
 import '../css/Header.scss'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [on, setOn] = useState(false);
@@ -18,9 +19,9 @@ const Header = () => {
     <header className={`Header ${on ? "on" : ""}`}>
         <div className="inner">
             <h1>
-                <a href="/">
+                <Link to='/'>
                     <img src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="" />
-                </a>
+                </Link>
             </h1>
             <nav className='gnb'>
                 <MainNav/>
