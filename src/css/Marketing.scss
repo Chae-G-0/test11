@@ -15,21 +15,14 @@
 
         .right {
             flex: 2;
+            margin: auto 0;
 
             h3 {
                 font-size: 19px;
                 font-weight: 700;
-                margin: 0 0 10px 0;
+                margin: 0 0 50px 0;
             }
 
-            .Mlist {
-                display: flex;
-                text-align: center;
-                gap: 20px;
-                font-size: 17px;
-                font-weight: 500;
-                margin: 0 0 30px 0;
-            }
 
             .Blist {
                 text-align: left;
@@ -42,7 +35,7 @@
                     
                     span {
                         color: #1e70c1;
-                        font-size: 23px;
+                        font-size: 21px;
                         font-weight: 500;
                         margin: 0 0 10px 0;
                     }

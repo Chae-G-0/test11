@@ -10,13 +10,7 @@ const Marketing = () => {
                 </div>
                 <div className="right">
                     <h3>부산 관광 홍보 및 활성화 활동</h3>
-                    <ul className="Mlist">
-                        <li>해외마케팅</li>
-                        <li>팸트립 지원</li>
-                        <li>관광 콘텐츠 개발</li>
-                        <li>통합 홍보 마케팅</li>
-                        <li>인센티브 지원</li>
-                    </ul>
+
                     <ul className="Blist">
                         <li>
                             <span>다국어 SNS 채널 활용 온라인 홍보 강화</span>
