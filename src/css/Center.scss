@@ -1,0 +1,32 @@
+@use "App";
+
+.Center {
+    .inner {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            text-align: left;
+        }
+
+        ul {
+            text-align: left;
+            li {
+                display: flex;
+                flex-direction: column;
+                margin: 0 0 20px 0;
+                span {
+                    color: #1e70c1;
+                    font-size: 17px;
+                    font-weight: 700;
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+    }
+
+    .Mback {
+        padding: 50px 0;
+        background: #ddd;
+    }
+}

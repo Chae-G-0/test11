@@ -4,4 +4,47 @@
     padding: 50px 0;
     color: #fff;
     background: #1e70c1;
+
+    h2 {
+        margin: 0;
+    }
+
+    .ft {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.4;
+
+        .sns {
+            ul {
+                display: flex;
+                gap: 10px;
+                font-size: 23px;
+            }
+        }
+    }
+
+    select {
+        -webkit-appearance: none;
+        border: none;
+        padding: 0 25px 0 10px;
+        background: #4c65a0;
+        color: #fff;
+        background-image: url(../../public/assets/images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: 95% 45%;
+
+        &:focus {
+            background-image: url(../../public/assets/images/arrowup.png);
+            background-repeat: no-repeat;
+            background-position: 95% 45%;
+        }
+
+        option {
+            font-size: 15px;
+            outline: none;
+            border: none;
+        }
+    }
 }

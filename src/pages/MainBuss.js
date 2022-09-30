@@ -18,7 +18,7 @@ const MainBuss = () => {
                     <p>부산관광공사는 지역의 역사, 문화, 예술 그리고 도시 전체를 활용한 지속가능관광의 기반을 만들겠습니다.</p>
                 </div>
                 <div className="right">
-                    {BUSS.map((bs, idx) => {
+                    {BUSS.map((bs) => {
                         return (
                             <figure key={bs.id}>
                                 <Link to={bs.link}>
