@@ -3,7 +3,14 @@
 .Center {
     .inner {
         display: flex;
+        gap: 50px;
         justify-content: space-between;
+
+        div {
+            padding: 45px;
+            flex: 1;
+            border: 1px solid #ddd;
+        }
 
         h3 {
             text-align: left;
