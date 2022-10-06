@@ -48,7 +48,7 @@ const WEATHER = [
     },
 ];
 
-const Sub02 = () => {
+const Sub02 = ({ wet }) => {
     return (
         <section className="Subpage">
             <div className="Sh02"></div>
@@ -82,6 +82,18 @@ const Sub02 = () => {
                             })}
                         </ul>
                     </div>
+                </div>
+                <div className="wet">
+                    <h3>오늘 부산의 날씨</h3>
+                    {wet.map((it) => {
+                        return (
+                            <ul>
+                                <li>날짜 : {it.baseDate}</li>
+                                <li>항목명 : {it.category}</li>
+                                <li>항목값 : {it.fcstValue}</li>
+                            </ul>
+                        );
+                    })}
                 </div>
             </div>
         </section>
