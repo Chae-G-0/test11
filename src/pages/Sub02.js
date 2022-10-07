@@ -49,12 +49,33 @@ const WEATHER = [
 ];
 
 const Sub02 = ({ wet }) => {
+    // const date = new Date().toLocaleDateString();
+    const date = new Date().toLocaleDateString("en-GB").split("/").reverse().join("-");
+
+    const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP");
+
     return (
         <section className="Subpage">
             <div className="Sh02"></div>
             <div className="inner sh">
                 <h2>부산여행정보</h2>
                 <p>The Best Bleisure City, 부산으로의 방문을 환영합니다. 당신이 즐길 수 있는 최고의 마이스 도시, 부산으로의 여행을 준비해보세요.</p>
+                <div className="wet">
+                    <h3>오늘 부산의 날씨</h3>
+                    <span>{date}</span>
+                    <div className="wbox">
+                        {nwet &&
+                            nwet.map((it, idx) => {
+                                return (
+                                    <ul key={idx}>
+                                        <li>{it.category}</li>
+                                        <li>{it.fcstValue}</li>
+                                        {console.log(wet[0].category)}
+                                    </ul>
+                                );
+                            })}
+                    </div>
+                </div>
                 <div className="box">
                     <div className="left">
                         <h3>부산 교통 정보</h3>
@@ -82,18 +103,6 @@ const Sub02 = ({ wet }) => {
                             })}
                         </ul>
                     </div>
-                </div>
-                <div className="wet">
-                    <h3>오늘 부산의 날씨</h3>
-                    {wet.map((it) => {
-                        return (
-                            <ul>
-                                <li>날짜 : {it.baseDate}</li>
-                                <li>항목명 : {it.category}</li>
-                                <li>항목값 : {it.fcstValue}</li>
-                            </ul>
-                        );
-                    })}
                 </div>
             </div>
         </section>
