@@ -8,6 +8,7 @@ import Main from "./pages/Main";
 import Sub01 from "./pages/Sub01";
 import Sub02 from "./pages/Sub02";
 import Sub03 from "./pages/Sub03";
+import Sub04 from "./pages/Sub04";
 
 function App() {
     const [wet, setWet] = useState();
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/Sub01" element={<Sub01 />} />
                 <Route path="/Sub02" element={<Sub02 wet={wet}/>} />
                 <Route path="/Sub03" element={<Sub03 />} />
+                <Route path="/Sub04" element={<Sub04 />} />
             </Routes>
             <Footer />
         </>

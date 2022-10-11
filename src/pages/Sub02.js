@@ -50,9 +50,17 @@ const WEATHER = [
 
 const Sub02 = ({ wet }) => {
     // const date = new Date().toLocaleDateString();
+
+    //	TMN	일 최저기온	℃	10
+    //	TMX	일 최고기온	℃	10
+    // 	WSD	풍속	m/s	10
+    // 	SKY	하늘상태	코드값	4
+    //	POP	강수확률	%	8
+    //
+
     const date = new Date().toLocaleDateString("en-GB").split("/").reverse().join("-");
 
-    const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP");
+    const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP" ||  it.category == "POP" || it.category == "WSD");
 
     return (
         <section className="Subpage">
