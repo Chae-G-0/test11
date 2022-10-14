@@ -27,7 +27,7 @@ function App() {
             <Routes>
                 {console.log(wet)}
                 <Route path="/" element={<Main />} />
-                <Route path="/Sub01" element={<Sub01 />} />
+                <Route path="/Sub01/*" element={<Sub01 />} />
                 <Route path="/Sub02" element={<Sub02 wet={wet}/>} />
                 <Route path="/Sub03" element={<Sub03 />} />
                 <Route path="/Sub04" element={<Sub04 />} />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Route, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/Subpage.scss";
 import Center from "./Center";
 import Marketing from "./Marketing";
@@ -53,7 +53,7 @@ const Sub01 = () => {
                                 setIDX(idx);
                             }}
                             className={IDX === idx ? "on" : ""}>
-                            <Link to={bm.link}>{bm.title}</Link>
+                            {bm.title}
                         </li>
                     );
                 })}
