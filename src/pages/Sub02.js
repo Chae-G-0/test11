@@ -60,7 +60,11 @@ const Sub02 = ({ wet }) => {
 
     const date = new Date().toLocaleDateString("en-GB").split("/").reverse().join("-");
 
-    const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP" ||  it.category == "POP" || it.category == "WSD");
+    const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP" || it.category == "POP" || it.category == "WSD");
+
+    const re = nwet[2].category.replace("SKY", "하늘 상태");
+
+    console.log(re);
 
     return (
         <section className="Subpage">
