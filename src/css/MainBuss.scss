@@ -1,62 +1,62 @@
 @use "App";
 
 .MainBuss {
-    background: url(../../public/assets/images/bg.png) no-repeat left bottom;
+    // background: url(../../public/assets/images/bg.png) no-repeat left bottom;
 
     .inner {
-        display: flex;
-        gap: 50px;
+        // display: flex;
+        // gap: 30px;
 
-        .left {
-            flex: 1;
-            p {
-                font-size: 17px;
-                font-weight: 500;
-                color: #333;
-                margin: 0 0 30px 0;
-                line-height: 1.4;
-            }
+        text-align: center;
+        h2 {
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: 500;
+            color: #333;
+            margin: 0 0 30px 0;
+            line-height: 1.4;
         }
 
         .right {
             display: flex;
-            gap: 20px;
-            flex: 2;
-            flex-wrap: wrap;
-            margin: 50px 0 0 0;
+            gap: 30px;
+            // flex-wrap: wrap;
 
             figure {
                 position: relative;
-                flex: 1 1 35%;
+                // flex: 1 1 35%;
 
                 img {
                     transition: 0.5s;
                 }
 
                 &:hover img {
-                    filter: brightness(30%);
+                    filter: brightness(70%);
                 }
 
                 .des {
+                    display: flex;
+                    flex-direction: column;
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
+                    bottom: 10%;
+                    left: 40%;
                     transform: translate(-50%, -50%);
                     font-size: 21px;
                     font-weight: 500;
+                    word-break: keep-all;
+                    text-align: left;
                     color: #fff;
                     opacity: 0;
                     transition: 0.5s;
+
+                    span {
+                        font-size: 15px;
+                    }
                 }
 
                 &:hover .des {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 21px;
-                    font-weight: 500;
-                    color: #fff;
                     opacity: 1;
                 }
             }

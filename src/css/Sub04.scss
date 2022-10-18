@@ -8,6 +8,8 @@
 .inner {
     .value {
         margin: 0 0 100px 0;
+        background: #f9f9f9;
+        padding: 5rem;
 
         h3 {
         }
@@ -52,42 +54,23 @@
         }
     }
 
-    .goal {
-        display: flex;
-        gap: 30px;
-        margin: 0 0 50px 0;
+    .sub04Table {
+        th {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 30px;
+        }
 
-        ul {
-            display: flex;
-            gap: 50px;
+        .tdtit {
             font-size: 19px;
             font-weight: 700;
-
-            li {
-            }
+            padding: 2rem;
         }
-    }
 
-    .work {
-        display: flex;
-        gap: 30px;
-
-        & > ul {
-            display: flex;
-            gap: 30px;
-            font-size: 17px;
+        td {
+            font-size: 15px;
             font-weight: 500;
-            text-align: left;
-
-            li {
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    li {
-                        margin: 0 0 10px 0;
-                    }
-                }
-            }
+            line-height: 30px;
         }
     }
 }
