@@ -1,0 +1,93 @@
+@import url(https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css);
+
+.Sh04 {
+    background: url(../../public/assets/images/subMain05.jpg) no-repeat top center;
+    height: 400px;
+}
+
+.inner {
+    .value {
+        margin: 0 0 100px 0;
+
+        h3 {
+        }
+
+        ul {
+            position: relative;
+            justify-content: space-between;
+            display: flex;
+            gap: 30px;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 200px;
+
+            li {
+                border: 1px solid #1e70c1;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+
+                &:not(:last-child)::after {
+                    position: absolute;
+                    content: "\e9c5";
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: "xeicon";
+                    font-size: 30px;
+                    color: #1e70c1;
+                }
+
+                &:nth-child(1)::after {
+                    left: 22%;
+                }
+
+                &:nth-child(2)::after {
+                    left: 50%;
+                }
+
+                &:nth-child(3)::after {
+                    left: 77%;
+                }
+            }
+        }
+    }
+
+    .goal {
+        display: flex;
+        gap: 30px;
+        margin: 0 0 50px 0;
+
+        ul {
+            display: flex;
+            gap: 50px;
+            font-size: 19px;
+            font-weight: 700;
+
+            li {
+            }
+        }
+    }
+
+    .work {
+        display: flex;
+        gap: 30px;
+
+        & > ul {
+            display: flex;
+            gap: 30px;
+            font-size: 17px;
+            font-weight: 500;
+            text-align: left;
+
+            li {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}

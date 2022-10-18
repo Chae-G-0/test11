@@ -60,11 +60,14 @@ const Sub02 = ({ wet }) => {
 
     const date = new Date().toLocaleDateString("en-GB").split("/").reverse().join("-");
 
-    const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP" || it.category == "POP" || it.category == "WSD");
+    const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP" || it.category == "POP" || it.category == "WSD" ||  it.category == "TMN" ||  it.category == "TMX" );
 
-    const re = nwet[2].category.replace("SKY", "하늘 상태");
+    // const TMP = nwet[0].category.replace("TMP", "풍속");
+    // const POP = nwet[1].category.replace("POP", "강수확률");
+    // const SKY = nwet[2].category.replace("SKY", "하늘 상태");
+    // const WSD = nwet[3].category.replace("SKY", "하늘 상태");
 
-    console.log(re);
+    // console.log(POP);
 
     return (
         <section className="Subpage">
