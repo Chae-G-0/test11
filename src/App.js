@@ -11,7 +11,7 @@ import Sub03 from "./pages/Sub03";
 import Sub04 from "./pages/Sub04";
 
 function App() {
-    const [wet, setWet] = useState();
+    const [wet, setWet] = useState("");
     const date = new Date().toLocaleDateString("en-GB").split("/").reverse().join("");
 
     useEffect(() => {
@@ -21,16 +21,22 @@ function App() {
 
     return (
         <>
-            <Header />
-            <Routes>
-                {console.log(wet)}
-                <Route path="/" element={<Main />} />
-                <Route path="/Sub01/*" element={<Sub01 />} />
-                <Route path="/Sub02" element={<Sub02 wet={wet} />} />
-                <Route path="/Sub03" element={<Sub03 />} />
-                <Route path="/Sub04" element={<Sub04 />} />
-            </Routes>
-            <Footer />
+            {wet ? (
+                <>
+                    <Header />
+                    <Routes>
+                        {console.log(wet)}
+                        <Route path="/" element={<Main wet={wet} />} />
+                        <Route path="/Sub01/*" element={<Sub01 />} />
+                        <Route path="/Sub02" element={<Sub02 wet={wet} />} />
+                        <Route path="/Sub03" element={<Sub03 />} />
+                        <Route path="/Sub04" element={<Sub04 />} />
+                    </Routes>
+                    <Footer />
+                </>
+            ) : (
+                <div>로딩중</div>
+            )}
         </>
     );
 }
