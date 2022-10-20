@@ -1,16 +1,23 @@
 import React from "react";
 import "../css/MainWet.scss";
 
+    //  TMP 1시간 기온 ℃
+    // 	WSD	풍속	m/s	10
+    // 	SKY	하늘상태	코드값	4
+    //	POP	강수확률	%	8
+
 const MainWet = ({ wet }) => {
     const date = new Date().toLocaleDateString("en-GB").split("/").reverse().join("-");
 
     const nwet = wet?.filter((it) => it.category == "SKY" || it.category == "TMP" || it.category == "POP" || it.category == "WSD");
 
+    // categoty
     const TMP = nwet[0].category.replace("TMP", "현재 기온");
     const WSD = nwet[1].category.replace("WSD", "풍속");
     const SKY = nwet[2].category.replace("SKY", "하늘 상태");
     const POP = nwet[3].category.replace("POP", "강수확률");
 
+    // fcstValue
     const SKYValue = nwet[2].fcstValue.replace("1", "맑음" || "3", "구름 많음" || "4", "흐림");
 
     return (

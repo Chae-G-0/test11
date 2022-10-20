@@ -62,13 +62,13 @@ const Sub02 = ({ wet }) => {
 
     // categoty
 
-    const TMP = nwet[0].category.replace("TMP", "현재 기온");
-    const WSD = nwet[1].category.replace("WSD", "풍속");
-    const SKY = nwet[2].category.replace("SKY", "하늘 상태");
-    const POP = nwet[3].category.replace("POP", "강수확률");
+    // const TMP = nwet[0].category.replace("TMP", "현재 기온");
+    // const WSD = nwet[1].category.replace("WSD", "풍속");
+    // const SKY = nwet[2].category.replace("SKY", "하늘 상태");
+    // const POP = nwet[3].category.replace("POP", "강수확률");
 
     // fcstValue
-    const SKYValue = nwet[2].fcstValue.replace("1", "맑음" || "3", "구름 많음" || "4", "흐림");
+    // const SKYValue = nwet[2].fcstValue.replace("1", "맑음" || "3", "구름 많음" || "4", "흐림");
 
     // console.log(TMP);
     // console.log(POP);
@@ -81,11 +81,11 @@ const Sub02 = ({ wet }) => {
             <div className="inner sh">
                 <h2>부산여행정보</h2>
                 <p>The Best Bleisure City, 부산으로의 방문을 환영합니다. 당신이 즐길 수 있는 최고의 마이스 도시, 부산으로의 여행을 준비해보세요.</p>
-                <div className="wet">
+                {/* <div className="wet">
                     <h3>오늘 부산의 날씨</h3>
                     <span>{date}</span>
                     <div className="wbox">
-                        {/* {nwet &&
+                        {nwet &&
                             nwet.map((it, idx) => {
                                 return (
                                     <ul key={idx}>
@@ -94,7 +94,7 @@ const Sub02 = ({ wet }) => {
                                         {console.log(wet.category)}
                                     </ul>
                                 );
-                            })} */}
+                            })}
                         <div className="category">
                             <ul>
                                 <li>{TMP}</li>
@@ -122,7 +122,7 @@ const Sub02 = ({ wet }) => {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="box">
                     <div className="left">
                         <h3>부산 교통 정보</h3>

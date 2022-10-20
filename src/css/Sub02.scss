@@ -5,50 +5,50 @@
     height: 400px;
 }
 
-.wet {
-    background: url(../../public/assets/images/wetback.jpg) no-repeat center center / cover;
-    color: #fff;
-    padding: 50px;
-    text-align: left;
-    margin: 0 0 50px 0;
+// .wet {
+//     background: url(../../public/assets/images/wetback.jpg) no-repeat center center / cover;
+//     color: #fff;
+//     padding: 50px;
+//     text-align: left;
+//     margin: 0 0 50px 0;
 
-    h3 {
-    }
+//     h3 {
+//     }
 
-    span {
-        display: inline-block;
-        margin: 0 0 30px 0;
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .wbox {
-        .category {
-            display: flex;
-            gap: 70px;
-            font-weight: 500;
-            justify-content: left;
-            margin: 0 auto;
+//     span {
+//         display: inline-block;
+//         margin: 0 0 30px 0;
+//         font-size: 15px;
+//         font-weight: 500;
+//     }
+//     .wbox {
+//         .category {
+//             display: flex;
+//             gap: 70px;
+//             font-weight: 500;
+//             justify-content: left;
+//             margin: 0 auto;
 
-            ul {
-                li {
-                    &:nth-child(1) {
-                        font-size: 17px;
-                        margin: 0 0 10px 0;
-                    }
+//             ul {
+//                 li {
+//                     &:nth-child(1) {
+//                         font-size: 17px;
+//                         margin: 0 0 10px 0;
+//                     }
 
-                    &:nth-child(2) {
-                        font-size: 14px;
-                    }
+//                     &:nth-child(2) {
+//                         font-size: 14px;
+//                     }
 
-                    span {
-                        font-size: 25px;
-                        margin: 0;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     span {
+//                         font-size: 25px;
+//                         margin: 0;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .box {
     h3 {
