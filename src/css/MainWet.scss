@@ -3,12 +3,22 @@
 .MainWet {
     background: url(../../public/assets/images/wetback.jpg) no-repeat center center / cover;
 
+    &.on {
+        .inner {
+            .mwet {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+    }
+
     .inner {
         .mwet {
             color: #fff;
-            // padding: 50px;
             text-align: left;
-            // margin: 0 0 50px 0;
+            opacity: 0;
+            transition: 0.5s;
+            transform: translateY(100px);
 
             h3 {
                 font-size: 25px;

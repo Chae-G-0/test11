@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/MainWet.scss";
 
     //  TMP 1시간 기온 ℃
@@ -20,8 +20,21 @@ const MainWet = ({ wet }) => {
     // fcstValue
     const SKYValue = nwet[2].fcstValue.replace("1", "맑음" || "3", "구름 많음" || "4", "흐림");
 
+    const [on, setOn] = useState(false);
+    useEffect(() => {
+        const scrollEvent = () => {
+            let sct = window.scrollY;
+            sct > 1100 ? setOn(true) : setOn(false);
+            console.log(sct);
+        };
+        window.addEventListener("scroll", scrollEvent);
+        return () => {
+            window.removeEventListener("scroll", scrollEvent);
+        };
+    }, []);
+
     return (
-        <section className="MainWet csc">
+        <section className={`MainWet csc ${on ? "on" : ""}`}>
             <div className="inner">
                 <div className="mwet">
                     <h3>오늘 부산의 날씨</h3>
