@@ -56,9 +56,10 @@
 
     .sub04Table {
         th {
+            border-top: 2px solid #1e70c1;
+            border-bottom: 2px solid #1e70c1;
             font-size: 17px;
             font-weight: 700;
-            line-height: 30px;
         }
 
         .tdtit {
@@ -68,9 +69,10 @@
         }
 
         td {
+            border-bottom: 1px solid #ddd;
             font-size: 15px;
             font-weight: 500;
-            line-height: 30px;
+            padding: 20px;
         }
     }
 }

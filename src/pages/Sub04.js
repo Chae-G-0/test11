@@ -21,7 +21,7 @@ const Sub04 = () => {
                 <table className="sub04Table">
                     <thead>
                         <tr>
-                            <td className="tdtit">전략목표</td>
+                            <th className="tdtit">전략목표</th>
                             <th>전문성 기반 관광사업 선진운영</th>
                             <th>미래성장동력 구축기반 마련</th>
                             <th>지역사회에 활력을 주는 사회적가치 창출</th>

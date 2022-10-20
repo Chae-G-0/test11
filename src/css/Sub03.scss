@@ -3,32 +3,39 @@
     height: 400px;
 }
 
-table {
-    border-top: 2px solid #1e70c1;
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
-
-    caption {
-        font-size: 21px;
-        font-weight: 500;
+.sub03 {
+    table {
+        margin: 30px 0 0 0;
         border-top: 2px solid #1e70c1;
-        padding: 10px 0;
-    }
-
-    tr {
-        border-bottom: 1px solid #ddd;
-
-        th {
-            padding: 10px 0;
-            font-size: 15px;
-            font-weight: 500;
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+    
+        tr {
+            border-bottom: 1px solid #ddd;
+    
+            th {
+                padding: 10px 0;
+                font-size: 17px;
+                font-weight: 700;
+                border-bottom: 2px solid #1e70c1;
+            }
+    
+            td {
+                padding: 10px;
+                font-size: 15px;
+                line-height: 1.4;
+            }
+    
+            .num {
+                padding: 0 10px;
+            }
+    
+            .write {
+                text-align: left;
+                padding: 0 20px;
+            }
         }
-
-        td {
-            // padding: 10px 0 10px 10px;
-            font-size: 15px;
-            line-height: 1.2;
-        }
     }
+    
 }
