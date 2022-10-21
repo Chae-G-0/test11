@@ -20,6 +20,13 @@
 
 외부 리소스 및 라이선스
 
+* 부산관광공사 홈페이지 소스(사진, 정보)
+* react-router-dom
+* react icon
+* react-fast-marquee
+* react slick
+* 공공데이터 기상청 API
+
 ---
 
 포트폴리오용으로 제작된 웹사이트 입니다.

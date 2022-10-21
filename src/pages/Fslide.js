@@ -1,6 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
+import Marquee from "react-fast-marquee";
 
 const FS = [
     { id: 1, src: "/assets/images/fSlide01.gif", link: "#!" },
@@ -23,27 +22,18 @@ const FS = [
 ];
 
 const Fslide = () => {
-    const setting = {
-        infinite: true,
-        slidesToShow: 13,
-        arrows: false,
-        autoplay: 1,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        swipeToSlide: true,
-    };
 
     return (
         <section className="Fslide">
-            <Slider {...setting}>
-                {FS.map((fs, idx) => {
-                    return (
-                        <figure key={fs.id}>
-                            <img src={process.env.PUBLIC_URL + fs.src} alt="" />
-                        </figure>
-                    );
-                })}
-            </Slider>
+            <Marquee>
+                {
+                    FS.map(it=> {
+                        return(
+                            <img src={process.env.PUBLIC_URL + it.src}></img>
+                        )
+                    })
+                }
+            </Marquee>
         </section>
     );
 };
