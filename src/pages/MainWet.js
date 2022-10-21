@@ -17,10 +17,13 @@ const MainWet = ({ wet }) => {
     const SKY = nwet[2].category.replace("SKY", "하늘 상태");
     const POP = nwet[3].category.replace("POP", "강수확률");
 
-    // fcstValue replace를 이용해도 "맑음" 문자는 나오지만 그 이후의 "구름많음", "흐림" 문자는 원 상태 그대로의 코드값이 노출되기 때문에 밑의 방법으로 바꿔주었다.
     // const SKYValue = nwet[2].fcstValue.replace("1", "맑음" || "3", "구름 많음" || "4", "흐림");
+    
+    // fcstValue replace를 이용해도 "맑음" 문자는 나오지만 그 이후의 "구름많음", "흐림" 문자는 원 상태 그대로의 코드값이 노출되기 때문에 밑의 방법으로 바꿔주었다.
+    
 
     // SKYValue에 객체로 하늘상태 코드값을 key, 바꿀 문자를 value에 담고 SKYValue[nwet[2].fcstValue] fcstValue는 1, 3, 4 중에 하나가 나오므로 코드값에 해당하는 value인 문자가 출력된다.
+
     const SKYValue = {
         1: "맑음",
         3: "구름 많음",

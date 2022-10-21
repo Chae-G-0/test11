@@ -4,7 +4,10 @@ import "../css/Header.scss";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+
     const [on, setOn] = useState(false);
+
+    // 스크롤을 내리면 header의 background가 변하는 효과를 위해 scroll값을 구하고 그 값이 0 이상일 때 on을 붙여주는 기능
     useEffect(() => {
         const scrollEvent = () => {
             let sct = window.scrollY;
@@ -15,6 +18,7 @@ const Header = () => {
             window.removeEventListener("scroll", scrollEvent);
         };
     }, []);
+
     return (
         <header className={`Header ${on ? "on" : ""}`}>
             <div className="inner">
@@ -26,14 +30,6 @@ const Header = () => {
                 <nav className="gnb">
                     <MainNav />
                 </nav>
-                {/* <div className="hwet">
-                    <ul>
-                        <li>현재기온 11 ℃</li>
-                        <li>풍속 3.2 m/s</li>
-                        <li>하늘상태 맑음</li>
-                        <li>강수확률 0%</li>
-                    </ul>
-                </div> */}
             </div>
         </header>
     );
