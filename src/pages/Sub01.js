@@ -19,7 +19,6 @@ const BM = [
         title: "마케팅",
         des: "부산 관광 홍보 및 활성화를 위해 해외 시장을 대상으로 다양한 마케팅을 추진하고 있습니다.",
         tab: <Marketing/>,
-
         link: "/Marketing",
     },
     {

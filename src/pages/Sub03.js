@@ -81,7 +81,7 @@ const Sub03 = () => {
         <section className="Subpage">
             <div className="Sh03"></div>
             <div className="inner sh sub03">
-                <h2>알림마당</h2>
+                <h2>공지사항</h2>
                 <table>
                     <tbody>
                         <tr>

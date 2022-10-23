@@ -3,14 +3,14 @@ import Fslide from './Fslide'
 import MainBuss from './MainBuss'
 import MainContent from './MainContent'
 import MainVisual from './MainVisual'
-import MainWet from './MainWet'
+import MainWeat from './MainWeat'
 
-const Main = ({wet}) => {
+const Main = ({weather}) => {
   return (
     <main className='Main'>
         <MainVisual />
         <MainBuss/>
-        <MainWet wet={wet} />
+        <MainWeat weather={weather} />
         <MainContent />
         <Fslide/>
     </main>

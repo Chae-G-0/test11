@@ -7,7 +7,7 @@ const Header = () => {
 
     const [on, setOn] = useState(false);
 
-    // 스크롤을 내리면 header의 background가 변하는 효과를 위해 scroll값을 구하고 그 값이 0 이상일 때 on을 붙여주는 기능
+    // 스크롤을 내리면 header의 background가 변하는 효과를 위해 scroll값을 구하고 그 값이 0 이상일 때 on을 붙여준다
     useEffect(() => {
         const scrollEvent = () => {
             let sct = window.scrollY;

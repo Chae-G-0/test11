@@ -1,6 +1,6 @@
 @use "App";
 
-.MainWet {
+.MainWeat {
     position: relative;
     background: url(../../public/assets/images/wetback.jpg) no-repeat center center / cover;
 
@@ -16,7 +16,7 @@
 
     &.on {
         .inner {
-            .mwet {
+            .mweat {
                 opacity: 1;
                 transform: translate(0);
             }
@@ -24,7 +24,7 @@
     }
 
     .inner {
-        .mwet {
+        .mweat {
             color: #fff;
             text-align: left;
             opacity: 0;
