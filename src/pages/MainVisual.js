@@ -1,17 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "../css/MainVisual.scss";
 
-const SLIDE = [
-    { id: 1, des: "광안대교", dot: "" },
-    { id: 2, des: "오륙도", dot: "" },
-    { id: 3, des: "해운대 마린시티", dot: "" },
-    { id: 4, des: "감천문화마을", dot: "" },
-    { id: 5, des: "다대포", dot: "" },
-];
-
 const MainVisual = () => {
+    const { SLIDE } = useSelector(state => state)
     const [IDX, setIDX] = useState();
     useEffect(() => {
         setIDX(0);

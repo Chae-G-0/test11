@@ -37,7 +37,6 @@ const MainWet = ({ weather }) => {
         const scrollEvent = () => {
             let sct = window.scrollY;
             sct > 1100 ? setOn(true) : setOn(false);
-            // console.log(sct);
         };
         window.addEventListener("scroll", scrollEvent);
         return () => {
