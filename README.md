@@ -15,7 +15,7 @@
 -   axios를 이용해 공공데이터 기상청 API를 받아와 화면에 기상 정보 안내
 -   react slick을 이용해 다양한 종류의 슬라이드 구현
 -   scolltop 값을 이용해 이벤트를 붙여 스크롤에 따라 콘텐츠가 나타나는 효과 구현
-
+-   react redux toolkit을 이용해 데이터를 하나의 파일에 담은 후 props 없이 각 component에서 받을 수 있게 함
 ---
 
 ### 외부 리소스 및 라이선스
@@ -25,6 +25,8 @@
 * react icon
 * react-fast-marquee
 * react slick
+* react redux
+* react redux toolkit
 * 공공데이터 기상청 API
 
 ---
