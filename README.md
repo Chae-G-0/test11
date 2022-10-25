@@ -6,12 +6,25 @@
 
 ### 프로젝트 설명 및 소개
 
-부산관광공사 홈페이지를 리디자인한 SPA(Single Page Application) 웹사이트 입니다. <br/>
-react hook과 react-redux로 데이터 상태 관리를 했습니다.<br/>
-메인페이지와 서브페이지로 구성되어 있으며, header의 메뉴를 클릭해 서브페이지로 이동할 수 있습니다. <br/>
-부산의 날씨 정보를 알려드리기 위해 axios를 이용해 공공데이터 기상청 단기예보 오픈 API를 받은 후, <br/>
-사용자들이 직관적으로 알아볼 수 있도록 원본 코드값을 filter, replace를 이용해 가공했습니다. <br/>
+* 부산관광공사 홈페이지를 리디자인한 SPA(Single Page Application) 웹사이트 입니다.
+* react hook과 react-redux로 데이터 상태 관리를 했습니다.
+* 메인페이지와 서브페이지로 구성되어 있으며, header의 메뉴를 클릭해 서브페이지로 이동할 수 있습니다.
+* 부산의 날씨 정보를 알려드리기 위해 axios를 이용해 공공데이터 기상청 단기예보 오픈 API를 받은 후, <br/>
+사용자들이 직관적으로 알아볼 수 있도록 원본 코드값을 filter, replace를 이용해 가공했습니다.
+
 <img src="/public/assets/images/API.png">
+
+```
+const nweat = weather?.filter((it) => it.category == "SKY" || it.category == "TMP" || it.category == "POP" || it.category == "WSD");
+```
+```
+const TMP = nweat[0].category.replace("TMP", "현재 기온");
+const WSD = nweat[1].category.replace("WSD", "풍속");
+const SKY = nweat[2].category.replace("SKY", "하늘 상태");
+const POP = nweat[3].category.replace("POP", "강수확률");
+```
+
+
 서브페이지는 여러 레이아웃과 테이블 태그를 이용해 구성했습니다.
 
 ---
