@@ -7,7 +7,7 @@
 ### 프로젝트 설명 및 소개
 
 부산관광공사 홈페이지를 리디자인한 SPA(Single Page Application) 웹사이트 입니다. <br/>
-react hook과 react-redux로 데이터 상태 관리를 했습니다.
+react hook과 react-redux로 데이터 상태 관리를 했습니다.<br/>
 메인페이지와 서브페이지로 구성되어 있으며, header의 메뉴를 클릭해 서브페이지로 이동할 수 있습니다. <br/>
 부산의 날씨 정보를 알려드리기 위해 axios를 이용해 공공데이터 기상청 단기예보 오픈 API를 받은 후, <br/>
 사용자들이 직관적으로 알아볼 수 있도록 원본 코드값을 filter, replace를 이용해 가공했습니다. <br/>
