@@ -26,7 +26,7 @@ const POP = nweat[3].category.replace("POP", "강수확률");
 
 ---
 
-### 외부 리소스 및 라이선스
+### 외부 리소스 & 라이브러리 및 플러그인
 
 -   부산관광공사 홈페이지 소스(사진, 정보)
 -   react-router-dom
