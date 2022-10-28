@@ -20,18 +20,9 @@
 const date = new Date().toLocaleDateString("en-GB").split("/").reverse().join("");
 ```
 
-2. API를 받으려면 인증키 역시 입력해야 하지만 그대로 노출시키지 않기 위해 env파일에 인증키를 넣어 숨겨줬습니다.
-
-```
-    useEffect(() => {
-        const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=REACT_APP_API_KEY&numOfRows=10&pageNo=1&base_date=${date}&base_time=0500&nx=35&ny=129&dataType=JSON`;
-        axios.get(url).then((res) => setWeather(res.data.response.body.items.item));
-    }, []);
-```
-
 <img src="/public/assets/images/API.png">
 
-3. 사용자들이 직관적으로 알아볼 수 있도록 원본 코드값을 filter, replace를 이용해 가공했습니다.
+2. 사용자들이 직관적으로 알아볼 수 있도록 원본 코드값을 filter, replace를 이용해 가공했습니다.
 
 ```
 const nweat = weather?.filter((it) => it.category == "SKY" || it.category == "TMP" || it.category == "POP" || it.category == "WSD");
